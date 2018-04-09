@@ -1,0 +1,35 @@
+uuid: cea29b66-5463-4820-babc-c4080c1c1a9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.store_locations
+  module:
+    - address
+id: node.store_locations.field_address
+field_name: field_address
+entity_type: node
+bundle: store_locations
+label: address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  fields:
+    - administrativeArea
+    - locality
+    - dependentLocality
+    - postalCode
+    - sortingCode
+    - addressLine1
+    - addressLine2
+    - organization
+    - givenName
+    - additionalName
+    - familyName
+  langcode_override: ''
+field_type: address
